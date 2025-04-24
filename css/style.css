@@ -70,7 +70,7 @@ display: flex;
 .game{
     width: 300px;
     height: 300px;
-    object-fit: cover; /* or use "contain" if you want full image without cropping */
+    object-fit: contain; /* or use "contain" if you want full image without cropping */
 }
 
 .gameinfo{
