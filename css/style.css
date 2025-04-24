@@ -101,18 +101,3 @@ display: flex;
     margin-top: 200px ;
 }
 
-#screenshotButton {
-    font-size: 20px;
-    padding: 10px 20px;
-    background-color: #1d5443;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 20px auto;
-    display: block;
-}
-
-#screenshotButton:hover {
-    background-color: #14432e;
-}
