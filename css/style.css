@@ -1,0 +1,118 @@
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .dm-serif-display-regular-italic {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+
+
+
+body{
+    background-color: d9ceb0;
+}
+
+#titre{
+    text-align: center;
+    padding: 50px;
+    position: sticky;
+}
+
+
+
+h1{
+    font-size: 50px;
+    color: 1d5443;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    text-decoration:underline;
+}
+
+#sub{
+    text-align: center;
+    padding: 30px;
+}
+
+#subtxt{
+    font-size: 45px;
+    background-color: transparent;
+    border: transparent;
+    color: 1d5443;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    text-align: center;
+}
+
+#twoplayers{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.box{
+display: flex;
+    flex-direction: column;
+    align-items: center; /* optional: centers the input and image */
+    gap: 10px; /* space between input and image */
+    padding: 30px;
+}
+
+.game{
+    width: 300px;
+    height: 300px;
+    object-fit: cover; /* or use "contain" if you want full image without cropping */
+}
+
+.gameinfo{
+    font-size: 20px;
+    background-color: transparent;
+    border: transparent;
+    color: 1d5443;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+    text-align: center;
+}
+
+#addBoxButton{
+    font-size: 50px;
+    border-radius: 100%;
+    border-color: #1d5443;
+    color: #1d5443;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto; /* Centers the button horizontally */
+    width: 80px; /* Optional: Set a fixed width */
+    height: 80px; /* Optional: Set a fixed height */
+    cursor: pointer; /* Adds a pointer cursor for better UX */
+    margin-top: 200px ;
+}
+
+#screenshotButton {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: #1d5443;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+}
+
+#screenshotButton:hover {
+    background-color: #14432e;
+}

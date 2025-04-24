@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Image Upload</title>
+  <style>
+    img {
+      max-width: 100%;
+      cursor: crosshair;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Upload an image and click on it</h2>
+  <input type="file" id="imageUpload" accept="image/*"><br><br>
+  <img id="uploadedImage" alt="Your uploaded image will appear here" />
+
+  <p id="clickCoords"></p>
+
+  <script>
+    const imageUpload = document.getElementById('imageUpload');
+    const uploadedImage = document.getElementById('uploadedImage');
+    const clickCoords = document.getElementById('clickCoords');
+
+    imageUpload.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      if (file) {
+        uploadedImage.src = URL.createObjectURL(file);
+      }
+    });
+
+    uploadedImage.addEventListener('click', (e) => {
+      const rect = uploadedImage.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      clickCoords.textContent = `You clicked at X: ${Math.round(x)}, Y: ${Math.round(y)}`;
+    });
+  </script>
+
+</body>
+</html>
